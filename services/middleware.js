@@ -7,11 +7,15 @@ exports.requiresLogin = function(req, res, next) {
 
 exports.isLogged = function(req, res, next) {
 	if (req.isAuthenticated()) {
-		var uid = req.user.id
-		res.locals.uid = uid.replace('|', '-')
+		var user = {
+			id: req.user.id,
+			idSlug: req.user.id.replace('|', '-')
+		}
+		console.log(req.user)
+		res.locals.user = user
 	}
 	else{
-		res.locals.uid = null
+		res.locals.user = null
 	}
 	next()
 }
