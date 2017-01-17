@@ -1,5 +1,5 @@
 {
-  "name": "auth0-valerio",
+  "name": "valerio-auth0",
   "version": "1.0.0",
   "description": "Herramientas para configurar Auth0 fácilmente en una aplicación Express-Node",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/SergioEnrique/auth0-valerio.git"
+    "url": "https://github.com/SergioEnrique/valerio-auth0.git"
   },
   "keywords": [
     "auth0",
